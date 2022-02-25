@@ -60,7 +60,6 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsConnected)
         {
             return;
-            ;
         }
 
         if (PhotonNetwork.CurrentRoom == null || PhotonNetwork.CurrentRoom.Players == null)

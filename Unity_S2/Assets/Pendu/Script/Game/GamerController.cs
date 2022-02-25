@@ -224,7 +224,10 @@ namespace Game
         public void OnExitCLick()
         {
             PhotonNetwork.LoadLevel(0);
-            PhotonNetwork.LeaveRoom();
+            if (PhotonNetwork.InRoom)
+            {
+                PhotonNetwork.Disconnect();
+            }
         }
     }
 }

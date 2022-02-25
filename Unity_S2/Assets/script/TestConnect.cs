@@ -38,10 +38,10 @@ public class TestConnect : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         print("joined lobby");
-        PhotonNetwork.FindFriends(new string[]{"1"});
+        //PhotonNetwork.FindFriends(new string[]{"1"});
     }
 
-    public override void OnFriendListUpdate(List<FriendInfo> friendList)
+    /*public override void OnFriendListUpdate(List<FriendInfo> friendList)
     {
         base.OnFriendListUpdate(friendList);
 
@@ -49,6 +49,6 @@ public class TestConnect : MonoBehaviourPunCallbacks
         {
             Debug.Log("Friend info received " + friendInfo.UserId + " is online " + friendInfo.IsOnline);
         }
-    }
+    }*/
     
 }
