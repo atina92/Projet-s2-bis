@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu1_script : MonoBehaviour
 {
@@ -13,6 +14,6 @@ public class Menu1_script : MonoBehaviour
 
     public void ChangeMenu()
     {
-        PhotonNetwork.LoadLevel(1);
+        SceneManager.LoadScene(1);
     }
 }
