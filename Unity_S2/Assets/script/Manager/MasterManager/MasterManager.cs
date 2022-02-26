@@ -47,14 +47,14 @@ public class MasterManager : SingletonScriptableObject<MasterManager>
         {
 #if UNITY_EDITOR
                 
-                Instance._networkedPrefabs.Clear();
+                //Instance._networkedPrefabs.Clear();
                 GameObject[] results = Resources.LoadAll<GameObject>("");
                 for (int i = 0; i < results.Length; i++)
                 {
                         if (results[i].GetComponent<PhotonView>() != null)
                         {
                                 string path = AssetDatabase.GetAssetPath(results[i]);
-                                Instance._networkedPrefabs.Add(new NetworkedPrefab(results[i],path));
+                                //Instance._networkedPrefabs.Add(new NetworkedPrefab(results[i],path));
                         }
                 }
 #endif

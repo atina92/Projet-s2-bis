@@ -24,7 +24,7 @@ namespace Matchmaking
         [Tooltip("The UI Label to inform the user that the connection is in progress")]
         [SerializeField]
         private GameObject progressLabel;
-
+        
         #endregion
 
 
@@ -46,27 +46,28 @@ namespace Matchmaking
         /// <summary>
         /// MonoBehaviour method called on GameObject by Unity during early initialization phase.
         /// </summary>
-        void Awake()
-        {
-            // #Critical
-            // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
-            PhotonNetwork.AutomaticallySyncScene = true;
-        }
-
+        
 
         /// <summary>
         /// MonoBehaviour method called on GameObject by Unity during initialization phase.
         /// </summary>
         void Start()
         {
+            // #Critical
+            // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
+            PhotonNetwork.AutomaticallySyncScene = true;
+            
             progressLabel.SetActive(false);
             controlPanel.SetActive(true);
         }
 
+
+        private bool switchingscene;
         private void Update()
         {
-            if (PhotonNetwork.CountOfPlayersInRooms >= 1)
+            if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2 && !switchingscene)
             {
+                switchingscene = true;
                 PhotonNetwork.LoadLevel(2);
             }
         }
@@ -126,7 +127,7 @@ namespace Matchmaking
     
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
+        Debug.Log("Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
         PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
@@ -134,7 +135,7 @@ namespace Matchmaking
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
+        Debug.Log("Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
     }
     }
 }
