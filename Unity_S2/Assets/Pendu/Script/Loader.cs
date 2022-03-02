@@ -6,14 +6,16 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-    public static class Loader 
+namespace Case1_HangedMan.Game
+{
+    public static class  Loader 
     {
         /*
          * Loads the file word_bank.txt and return a random word from the file
          * The path should be where the work_bank.txt is located in your directory
          * The function can be called with no arguments as its predefined value is at the root of the TP1 folder
          */
-        public static string GetWord(string path = "/Users/user/Desktop/Projet-S2/Unity_S2/Assets/Pendu/Script/word_bank.txt")
+        public static string GetWord(string path = "Assets/Pendu/Script/word_bank.txt")
         {
             if (!File.Exists(path))
                 throw new ArgumentException("Loader: couldn't load word bank at " + path);
@@ -138,3 +140,4 @@ phewwww!"
         // Global variable defining the number of attempts before the game ends
         public static readonly int Attempts = Ascii.Length - 2;
     }
+}
