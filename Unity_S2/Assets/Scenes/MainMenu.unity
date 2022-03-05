@@ -611,6 +611,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu1
       objectReference: {fileID: 0}
+    - target: {fileID: 4037865390283128136, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.b
+      value: 0.35500178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865390283128136, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865390283128136, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.r
+      value: 0.53179604
+      objectReference: {fileID: 0}
     - target: {fileID: 4037865390283128142, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
       propertyPath: m_SizeDelta.x
       value: 375.1866
@@ -698,6 +710,30 @@ PrefabInstance:
     - target: {fileID: 4037865390511062221, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865390511062222, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.b
+      value: 0.45464578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865390511062222, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865390511062222, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.r
+      value: 0.64230263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865391051528897, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2962976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865391051528897, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037865391051528897, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
+      propertyPath: m_Color.r
+      value: 0.47743258
       objectReference: {fileID: 0}
     - target: {fileID: 4037865391051528903, guid: 68179bfea3a594e1d82e20d5ac4670ec, type: 3}
       propertyPath: m_SizeDelta.x
