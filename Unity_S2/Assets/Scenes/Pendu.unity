@@ -373,7 +373,7 @@ RectTransform:
   - {fileID: 1126130282}
   - {fileID: 1534047708}
   - {fileID: 1062182249}
-  m_Father: {fileID: 1871546306}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -458,7 +458,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285841360
 GameObject:
@@ -650,7 +650,7 @@ Transform:
   m_Children:
   - {fileID: 1065190269}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &663025070
 GameObject:
@@ -1961,7 +1961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1469551870
 GameObject:
@@ -3041,7 +3041,7 @@ Transform:
   - {fileID: 898357848}
   - {fileID: 1482763338}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1836992916
 CapsuleCollider:
@@ -3185,10 +3185,9 @@ Transform:
   m_LocalRotation: {x: 0.10529183, y: -0, z: -0, w: 0.9944414}
   m_LocalPosition: {x: 276, y: 380, z: -151}
   m_LocalScale: {x: 0, y: 1, z: 1}
-  m_Children:
-  - {fileID: 106522349}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 12.088, y: 0, z: 0}
 --- !u!1 &1883150397
 GameObject:
@@ -3222,7 +3221,7 @@ RectTransform:
   - {fileID: 40927633}
   - {fileID: 1499362829}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
